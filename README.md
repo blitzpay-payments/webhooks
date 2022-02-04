@@ -5,6 +5,13 @@ Todos os eventos são enviado no formato POST FORM, é possível solicitar o env
 - Content-Type: application/json (JSON)
 - Content-Type: application/x-www-form-urlencoded (Form Data)
 
+#### Payment Method (payment_method)
+- card
+- billet
+- pix
+- two_card
+- smart_card (Recuperacão de Vendas)
+
 ### Pagamento Aprovado
 
 ```
