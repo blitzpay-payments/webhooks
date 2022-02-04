@@ -86,7 +86,7 @@ Todos os eventos são enviado no formato POST FORM, é possível solicitar o env
  'payment_type': 'online_course',
  'charge_type': 'unique',
  'warranty_at': '2022-02-11',
- 'payment_method': 'card',
+ 'payment_method': 'billet',
  'payment_plan': 'unique',
  'date_renew': '2023-02-04',
  'status': 'pending',
