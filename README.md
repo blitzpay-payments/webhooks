@@ -91,6 +91,83 @@ Todos os eventos são enviado no formato POST FORM, é possível solicitar o env
 ```
 ------
 
+### Chargeback
+```
+{'tid': '2aabb487-f2af-4ac5-9ac1-006d09aae721',
+ 'order': 'BP126870',
+ 'name': 'Anakin Skywalker Vader',
+ 'email': 'anakin.skywalker@starwars.com',
+ 'document': '90048701977',
+ 'doc_type': 'cpf',
+ 'country': 'BR',
+ 'phone': '551199998888',
+ 'product_id': 278,
+ 'product_code': 'EVJ8ZG',
+ 'product_name': 'Como se tornar um Sith',
+ 'product_price': 500.0,
+ 'full_price': 500.0,
+ 'payment_type': 'signature',
+ 'charge_type': 'signature',
+ 'warranty_at': '2030-06-28',
+ 'payment_method': 'card',
+ 'payment_plan': 'yearly',
+ 'date_renew': '2031-06-21',
+ 'sck': 'palpatine',
+ 'offer_id': null, # Quando é uma oferta vem preenchido
+ 'offer_code': null,
+ 'offer_price': null,
+ 'plan_code': '2sbwfgct',
+ 'plan_id': 56,
+ 'plan_price': 500.0,
+ 'periodicity': 'yearly',
+ 'type': 'payment', 
+ 'status': 'chargeback',
+ 'created_at': '2030-06-21 13:42:22.400441+00:00',
+ 'chargeback_at': '2030-06-21 18:42:22.400441+00:00',
+ 'timestamp': '1655830333.414318',
+ 'external_id': '1977',
+}
+```
+------
+### Unsubscribe
+```
+{'tid': '2aabb487-f2af-4ac5-9ac1-006d09aae721',
+ 'order': 'BP126870',
+ 'name': 'Anakin Skywalker Vader',
+ 'email': 'anakin.skywalker@starwars.com',
+ 'document': '90048701977',
+ 'doc_type': 'cpf',
+ 'country': 'BR',
+ 'phone': '551199998888',
+ 'product_id': 278,
+ 'product_code': 'EVJ8ZG',
+ 'product_name': 'Como se tornar um Sith',
+ 'product_price': 500.0,
+ 'full_price': 500.0,
+ 'payment_type': 'signature',
+ 'charge_type': 'signature',
+ 'warranty_at': '2030-06-28',
+ 'payment_method': 'card',
+ 'payment_plan': 'yearly',
+ 'date_renew': '2031-06-21',
+ 'sck': 'palpatine',
+ 'offer_id': null, # Quando é uma oferta vem preenchido
+ 'offer_code': null,
+ 'offer_price': null,
+ 'plan_code': '2sbwfgct',
+ 'plan_id': 56,
+ 'plan_price': 500.0,
+ 'periodicity': 'yearly',
+ 'type': 'subscription', 
+ 'status': 'unsubscribe',
+ 'created_at': '2030-06-21 13:42:22.400441+00:00',
+ 'cancel_signature_at': '2030-06-21 18:42:22.400441+00:00',
+ 'timestamp': '1655830333.414318',
+ 'external_id': '1977',
+}
+```
+------
+
 ### Boleto Gerado
 
 ```
