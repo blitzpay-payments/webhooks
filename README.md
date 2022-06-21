@@ -251,7 +251,7 @@ Todos os eventos são enviado no formato POST FORM, é possível solicitar o env
  'status': 'failed'
 }
 ```
- 
+ ---
 ### Carrinho Abandonado
 ```
 {
@@ -267,6 +267,82 @@ Todos os eventos são enviado no formato POST FORM, é possível solicitar o env
     'status': 'abandoned_cart'
 }
 ```
-
-
-
+---
+### Pix Generate
+```
+{'tid': '2aabb487-f2af-4ac5-9ac1-006d09aae721',
+ 'order': 'BP126870',
+ 'name': 'Anakin Skywalker Vader',
+ 'email': 'anakin.skywalker@starwars.com',
+ 'document': '90048701977',
+ 'doc_type': 'cpf',
+ 'country': 'BR',
+ 'phone': '551199998888',
+ 'product_id': 278,
+ 'product_code': 'EVJ8ZG',
+ 'product_name': 'Como se tornar um Sith',
+ 'product_price': 500.0,
+ 'full_price': 500.0,
+ 'payment_type': 'signature',
+ 'charge_type': 'signature',
+ 'warranty_at': '2030-06-28',
+ 'payment_method': 'card',
+ 'payment_plan': 'yearly',
+ 'date_renew': '2031-06-21',
+ 'sck': 'palpatine',
+ 'offer_id': 10,
+ 'offer_code': 8uc3iu,
+ 'offer_price': '300.0',
+ 'plan_code': null,
+ 'plan_id': null,
+ 'plan_price': null,
+ 'periodicity': null,
+ 'type': 'pix', 
+ 'status': 'generate',
+ 'qr_code_url': 'https://api.pagar.me/core/v5/transactions/tran_zlMOKovHgXIRMOB9/qrcode?payment_method=pix',
+ 'pix_amount': '300.0',
+ 'pix_expires_at': '2030-06-21 20:42:22.400441+00:00',
+ 'created_at': '2030-06-21 13:42:22.400441+00:00',
+ 'timestamp': '1655830333.414318',
+ 'external_id': '1977',
+}
+```
+---
+### Payment Completed
+```
+{'tid': '2aabb487-f2af-4ac5-9ac1-006d09aae721',
+ 'order': 'BP126870',
+ 'name': 'Anakin Skywalker Vader',
+ 'email': 'anakin.skywalker@starwars.com',
+ 'document': '90048701977',
+ 'doc_type': 'cpf',
+ 'country': 'BR',
+ 'phone': '551199998888',
+ 'product_id': 278,
+ 'product_code': 'EVJ8ZG',
+ 'product_name': 'Como se tornar um Sith',
+ 'product_price': 500.0,
+ 'full_price': 500.0,
+ 'payment_type': 'signature',
+ 'charge_type': 'signature',
+ 'warranty_at': '2030-06-28',
+ 'payment_method': 'card',
+ 'payment_plan': 'yearly',
+ 'date_renew': '2031-06-21',
+ 'sck': 'palpatine',
+ 'offer_id': 10,
+ 'offer_code': 8uc3iu,
+ 'offer_price': '300.0',
+ 'plan_code': null,
+ 'plan_id': null,
+ 'plan_price': null,
+ 'periodicity': null,
+ 'type': 'payment',
+ 'status': 'completed',
+ 'paid_at': '2030-06-21 13:42:22.400441+00:00',
+ 'completed_at': '2030-07-21 13:42:22.400441+00:00',
+ 'created_at': '2030-06-21 13:42:22.400441+00:00',
+ 'timestamp': '1655830333.414318',
+ 'external_id': '1977',
+}
+```
